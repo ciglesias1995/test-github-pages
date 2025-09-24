@@ -1,45 +1,99 @@
 <!DOCTYPE HTML>
-<!--
-    Eventually by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-    <head>
-        <title>Trabajo de fin de grado</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
-    <body class="is-preload">
+<head>
+    <title>Trabajo de fin de grado</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Estilo simple para el blog */
+        #blog {
+            margin: 2em;
+        }
+        .week {
+            border: 1px solid #ccc;
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+        .week h2 {
+            cursor: pointer;
+            margin: 0;
+        }
+        .entries {
+            display: none;
+            margin-top: 0.5em;
+        }
+        .entry {
+            border-top: 1px dashed #aaa;
+            padding: 0.5em 0;
+        }
+    </style>
+</head>
+<body class="is-preload">
 
-        <!-- Header -->
-        <header id="header">
-            <h1>Trabajo de fin de grado</h1>
-            <p>Carlos Iglesias</p>
-        </header>
+    <!-- Header -->
+    <header id="header">
+        <h1>Trabajo de fin de grado</h1>
+        <p>Carlos Iglesias</p>
+    </header>
 
-        <!-- Signup Form -->
-        <form id="signup-form" method="post" action="#">
-            <input type="email" name="email" id="email" placeholder="Email Address" />
-            <input type="submit" value="Sign Up" />
-        </form>
+    <!-- Blog por semanas -->
+    <section id="blog">
+        <h1>Blog Semanal</h1>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
-                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </footer>
+        <!-- Semana 1 -->
+        <div class="week">
+            <h2 onclick="toggleEntries(this)">Semana 1</h2>
+            <div class="entries">
+                <div class="entry">
+                    <h3>Título de la entrada 1</h3>
+                    <p>Contenido de la entrada 1...</p>
+                </div>
+                <div class="entry">
+                    <h3>Título de la entrada 2</h3>
+                    <p>Contenido de la entrada 2...</p>
+                </div>
+            </div>
+        </div>
 
-        <!-- Scripts -->
-        <script src="assets/js/main.js"></script>
+        <!-- Semana 2 -->
+        <div class="week">
+            <h2 onclick="toggleEntries(this)">Semana 2</h2>
+            <div class="entries">
+                <div class="entry">
+                    <h3>Título de la entrada 1</h3>
+                    <p>Contenido de la entrada 1...</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </body>
+    <!-- Signup Form -->
+    <form id="signup-form" method="post" action="#">
+        <input type="email" name="email" id="email" placeholder="Email Address" />
+        <input type="submit" value="Sign Up" />
+    </form>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function toggleEntries(header) {
+            const entries = header.nextElementSibling;
+            entries.style.display = entries.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
 </html>
