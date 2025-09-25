@@ -43,7 +43,7 @@
             <p>Esta semana había que ponerse a trabajar un poco más serio con ROS2. Para ello, resolví el ejercicio Follow Line de  <br>
             RoboticsAcademy. El ejercicio se basa en detectar la línea roja de la imagen de la cámara, calcular la desviación con el <br>
             centro y controlar la velocidad angular del coche usando un controlador PID</p>
-            <p>El programa es un nodo de ROS2 escrito en Python, con un suscriptor al topic de la cámara para recibir las imágenes de la misma<br>,  
+            <p>El programa es un nodo de ROS2 escrito en Python, con un suscriptor al topic de la cámara para recibir las imágenes de la misma,<br>
             un publicador de las imágenes procesadas para poder verlas en el entorno de visualización y un publicador de velocidades</p>
             <p>Para resolverlo se convierte la imagen a OpenCV, se pasa de BGR a HSV y se genera una máscara con las partes rojas de la imagen;<br>
             así, se buscan los contornos y se calcula el centroide del mismo. Con el valor de coordenada x se calcula el error y así la velocidad angular mediante<br>
@@ -74,7 +74,7 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
+    <!--<footer id="footer">
         <ul class="icons">
             <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
             <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -84,7 +84,7 @@
         <ul class="copyright">
             <li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
-    </footer>
+    </footer>-->
 
     <script src="assets/js/main.js"></script>
 </body>
