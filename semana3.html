@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Semana 3 - Trabajo de fin de grado</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
+
+    <!-- Contenido de la semana -->
+    <section class="wrapper style1">
+        <div class="inner">
+            <h2>Grafo de visibilidad como navegación global y Gazebo Worlds</h2>
+            <p>Esta semana la dediqué a varias cosas: aprender sobre la técnica de navegación global grafo de visibilidad, elección del<br>
+            mundo de Gazebo para desarrollar el proyecto y leer las instrucciones para desarrolladores de Robotics Academy</p>
+            <p>El grafo de visibilidad es un método para lograr la navegación global en robots móviles. Con este método, a partir de un mapa<br>
+            de obstáculos fijos se generan nodos que conectan puntos visibles entre sí (vértices de obstáculos etc). Los nodos se conectan de<br>
+            tal forma que no atraviesen obstáculos y se obtiene un grafo con los posibles caminos por los que el robot puede moverse. Para evitar<br>
+            la colisión con los obstáculos, se implementan zonas de seguridad alrededor de los mismos. Para planificar la ruta, se usan algoritmos como <br>
+            el de Dijkstra y A* sobre el grafo para hallar la ruta entre el robot y el destino.</p>
+            <p>Esta técnica de navegación es útil para interiores con obstáculos fijos, y puede mejorarse con la integración de sensores para lidiar con<br>
+            los obstáculos móviles. </p>
+          
+        </div>
+    </section>
+
+    <!-- Navegación -->
+    <section class="wrapper style2">
+        <div class="inner navigation-buttons">
+            <a href="index.html" class="button">Volver al Blog</a>
+            <a href="semana2.html" class="button">Siguiente Semana</a>
+        </div>
+    </section>
+    
+    <style>
+        .navigation-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+    </style>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
