@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Semana 4 - Trabajo de fin de grado</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Estilos personalizados para scroll y body -->
+    <style>
+      html, body {
+        min-height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto !important;
+      }
+      body {
+        display: block !important;
+        height: auto !important;
+        min-height: 100vh !important;
+        justify-content: flex-start !important;
+        align-items: stretch !important;
+        padding: 2em 4em !important;
+      }
+      .navigation-buttons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+        z-index: 1000;
+      }
+    </style>
+</head>
+<body class="is-preload">
+
+    <section class="wrapper style1">
+        <div class="inner">
+            <h2>Modelo URDF de robot</h2>
+            <p>Esta semana estuve trabajando en la selección del modelo URDF del robot. Para entenderlo mejor, estuve siguiendo un tutorial que creaba<br>
+            un robot móvil desde 0. Aprendí a definir cada fichero XACRO y a definir en el launch lo necesario para que lo convierta a un modelo URDF. También<br>
+            estuve viendo cómo usar los plugins y hacer el robot omnidireccinal. Ya con el robot listo, me propuse añadirle un láser scan con el plugin <br>
+            necesario. Estuve testeándolo y funcionaba bastante bien. El único problema es que el robot era demasiado inestable, quizá porque las inercias no<br>
+            estaban correctamente definidas.</p>
+            <p>Estuve viendo robots que pudieran cuadrar en nuestro proyecto y entre ellos pensé en el Husky, Jackal... pero hubo uno que me pareció estupendo<br>
+            para nuestro propósito.</p>
+            
+
+
+            <p>Otro punto importante que estuve tratando fue la elección de el entorno donde llevar a cabo las pruebas. Estuve viendo varios mundos de Gazebo<br>
+            y terminé dedidiéndome por un almacén que me gustó bastante. Quise desplegar un turtlebot y mapear el entorno para ver cómo de adecuado era<br>
+            para nuestro propósito, pero no hubo manera. Espero tener más suerte próxima semana.</p>
+
+        </div>
+    </section>
+
+    <section class="wrapper style2">
+        <div class="inner navigation-buttons">
+            <a href="index.html" class="button">Volver al Blog</a>
+            <a href="semana2.html" class="button">Siguiente Semana</a>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
