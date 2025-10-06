@@ -1,70 +1,66 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Semana 3 - Trabajo de fin de grado</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Semana 3 - Trabajo de fin de grado</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body class="is-preload">
 
-    <!-- Contenido de la semana -->
-    <section class="wrapper style1" style="margin-top:120px;">
-        <div class="inner">
-            <h2>Grafo de visibilidad como navegación global y Gazebo Worlds</h2>
-            <p>Esta semana la dediqué a varias cosas: aprender sobre la técnica de navegación global grafo de visibilidad, elección del<br>
-            mundo de Gazebo para desarrollar el proyecto y leer las instrucciones para desarrolladores de Robotics Academy</p>
-            <p>El grafo de visibilidad es un método para lograr la navegación global en robots móviles. Con este método, a partir de un mapa<br>
-            de obstáculos fijos se generan nodos que conectan puntos visibles entre sí (vértices de obstáculos etc). Los nodos se conectan de<br>
-            tal forma que no atraviesen obstáculos y se obtiene un grafo con los posibles caminos por los que el robot puede moverse. Para evitar<br>
-            la colisión con los obstáculos, se implementan zonas de seguridad alrededor de los mismos. Para planificar la ruta, se usan algoritmos como <br>
-            el de Dijkstra y A* sobre el grafo para hallar la ruta entre el robot y el destino.</p>
-            <p>Esta técnica de navegación es útil para interiores con obstáculos fijos, y puede mejorarse con la integración de sensores para lidiar con<br>
-            los obstáculos móviles. </p>
-            
-            <!-- Imagen con pie de foto -->
-            <figure style="text-align: center; margin: 20px 0;">
-                <img src="images/grafo_de_visisbilidad.png" alt="Ejemplo de grafo de visibilidad" 
-                     style="max-width:100%; height:auto; border-radius:10px;">
-                <figcaption style="margin-top: 10px; font-style: italic; color: #666;">
-                    Figura 1: Ejemplo de grafo de visibilidad para navegación de robots
-                </figcaption>
-            </figure>
+        <section class="wrapper style1">
+        <div class="inner">
+            <h2>Grafo de visibilidad como navegación global y Gazebo Worlds</h2>
+            <p>Esta semana la dediqué a varias cosas: aprender sobre la técnica de navegación global grafo de visibilidad, elección del<br>
+            mundo de Gazebo para desarrollar el proyecto y leer las instrucciones para desarrolladores de Robotics Academy</p>
+            <p>El grafo de visibilidad es un método para lograr la navegación global en robots móviles. Con este método, a partir de un mapa<br>
+            de obstáculos fijos se generan nodos que conectan puntos visibles entre sí (vértices de obstáculos etc). Los nodos se conectan de<br>
+            tal forma que no atraviesen obstáculos y se obtiene un grafo con los posibles caminos por los que el robot puede moverse. Para evitar<br>
+            la colisión con los obstáculos, se implementan zonas de seguridad alrededor de los mismos. Para planificar la ruta, se usan algoritmos como <br>
+            el de Dijkstra y A* sobre el grafo para hallar la ruta entre el robot y el destino.</p>
+            <p>Esta técnica de navegación es útil para interiores con obstáculos fijos, y puede mejorarse con la integración de sensores para lidiar con<br>
+            los obstáculos móviles. </p>
+            
+                        <figure style="text-align: center; margin: 20px 0;">
+                <img src="images/grafo_de_visisbilidad.png" alt="Ejemplo de grafo de visibilidad" 
+                     style="max-width:100%; height:auto; border-radius:10px;">
+                <figcaption style="margin-top: 10px; font-style: italic; color: #666;">
+                    Figura 1: Ejemplo de grafo de visibilidad para navegación de robots
+                </figcaption>
+            </figure>
 
-            <p>Otro punto importante que estuve tratando fue la elección de el entorno donde llevar a cabo las pruebas. Estuve viendo varios mundos de Gazebo<br>
-            y terminé dedidiéndome por un almacén que me gustó bastante. Quise desplegar un turtlebot y mapear el entorno para ver cómo de adecuado era<br>
-            para nuestro propósito, pero no hubo manera. Espero tener más suerte próxima semana.</p>
+            <p>Otro punto importante que estuve tratando fue la elección de el entorno donde llevar a cabo las pruebas. Estuve viendo varios mundos de Gazebo<br>
+            y terminé dedidiéndome por un almacén que me gustó bastante. Quise desplegar un turtlebot y mapear el entorno para ver cómo de adecuado era<br>
+            para nuestro propósito, pero no hubo manera. Espero tener más suerte próxima semana.</p>
 
-            <!-- Imagen con pie de foto -->
-            <figure style="text-align: center; margin: 20px 0;">
-                <img src="images/almacen.png" alt="Almacén en Gazebo" 
-                     style="max-width:100%; height:auto; border-radius:10px;">
-                <figcaption style="margin-top: 10px; font-style: italic; color: #666;">
-                    Figura 2: Almacén de Gazebo
-                </figcaption>
-            </figure>
-        </div>
-    </section>
+                        <figure style="text-align: center; margin: 20px 0;">
+                <img src="images/almacen.png" alt="Almacén en Gazebo" 
+                     style="max-width:100%; height:auto; border-radius:10px;">
+                <figcaption style="margin-top: 10px; font-style: italic; color: #666;">
+                    Figura 2: Almacén de Gazebo
+                </figcaption>
+            </figure>
+        </div>
+    </section>
 
-    <!-- Navegación -->
-    <section class="wrapper style2">
-        <div class="inner navigation-buttons">
-            <a href="index.html" class="button">Volver al Blog</a>
-            <a href="semana2.html" class="button">Siguiente Semana</a>
-        </div>
-    </section>
-    
-    <style>
-        .navigation-buttons {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            gap: 10px;
-            z-index: 1000;
-        }
-    </style>
+        <section class="wrapper style2">
+        <div class="inner navigation-buttons">
+            <a href="index.html" class="button">Volver al Blog</a>
+            <a href="semana2.html" class="button">Siguiente Semana</a>
+        </div>
+    </section>
+    
+    <style>
+        .navigation-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+    </style>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
